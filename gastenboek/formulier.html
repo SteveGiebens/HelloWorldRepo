@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Telenet Gastenboek</title>
+</head>
+<body>
+    <form action="/cgi-bin/gastenboek.cgi?/SteveGiebens/gastenboek/" method="POST">
+    <input type="hidden" name="OKurl" value="/SteveGiebens/gastenboek/toegevoegd.html">
+    <p>
+        Dit is een voorbeeld van een gastenboek.</p>
+    <table border="0" width="374">
+        <tr>
+            <td width="137">
+                Naam:
+            </td>
+            <td width="230">
+                <input type="text" size="31" name="Naam">
+            </td>
+        </tr>
+        <tr>
+            <td width="137">
+                E-mailadres:
+            </td>
+            <td width="230">
+                <input type="text" size="31" name="Email">
+            </td>
+        </tr>
+        <tr>
+            <td width="137">
+                URL:
+            </td>
+            <td width="230">
+                <input type="text" size="31" name="URL" value="http://">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Bericht:<br>
+                <textarea name="Bericht" rows="6" cols="43"></textarea>
+                <p align="right">
+                    <input type="submit" name="cmdVerzenden" value="Verzenden">&nbsp;
+                    <input type="reset" name="cmdWissen" value="Wissen">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Steve Giebens</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="http://maps.googleapis.com/maps/api/js">
+    </script>
+    <script>
+        function initialize() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap")
+  , mapProp);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Steve Giebens</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="Steve.html">Steve</a></li>
+                    <li><a href="index3.html">index3</a></li>
+                    <li><a href="gastenboek/formulier.html">Steve2</a></li>
+                    <li><a href="form/formulier.html">Steve2</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>
+            Table</h2>
+        <p>
+            Create a responsive table (will scroll horizontally on small devices under 768px).
+            In addition: add alternating cell background color:</p>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>
+                            #
+                        </th>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Street
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Anna Awesome
+                        </td>
+                        <td>
+                            Broome Street
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            Debbie Dallas
+                        </td>
+                        <td>
+                            Houston Street
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            John Doe
+                        </td>
+                        <td>
+                            Madison Street
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2>
+            Image</h2>
+        <p>
+            Create a responsive image (will scale to the parent element). In addition: shape
+            the image to a circle:</p>
+        <img src="images/me.jpg" class="img-responsive img-circle" alt="Cinque Terre" width="304"
+            height="236">
+        <h2>
+            Glyphicons</h2>
+        <p>
+            Insert icons:</p>
+        <p>
+            Cloud icon: <span class="glyphicon glyphicon-cloud"></span>
+        </p>
+        <p>
+            Envelope icon: <span class="glyphicon glyphicon-envelope"></span>
+        </p>
+        <p>
+            Search icon: <span class="glyphicon glyphicon-search"></span>
+        </p>
+        <p>
+            Print icon: <span class="glyphicon glyphicon-print"></span>
+        </p>
+        <p>
+            Download icon: <span class="glyphicon glyphicon-download"></span>
+        </p>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>
+                My first Bootstrap website!</h1>
+            <p>
+                This page will grow as we add more and more components from Bootstrap...</p>
+            <a href="index3.html" class="btn btn-info btn-lg">Search</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="col-md-3">
+                <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.</p>
+            </div>
+            <div class="col-md-3">
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium, totam rem aperiam.</p>
+            </div>
+            <div class="col-md-3">
+                <p>
+                    Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                    sunt explicabo.</p>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <div id="googleMap" style="width:500px;height:380px;"></div>
+
+    <!-- JavaScript placed at the end of the document so the pages load faster -->
+    <!-- Optional: Include the jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Optional: Incorporate the Bootstrap JavaScript plugins -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>Dit is mijn eenvoudig invulformulier</title>
+</head>
+<body>
+    <form action="/cgi-bin/form.cgi" method="POST">
+    <input type="hidden" name="DEBUG" value="0">
+    <input type="hidden" name="MAILFILE" value="SteveGiebens/form/sjabloon.txt">
+    <input type="hidden" name="MAILTO" value="Steve.Giebens@telenet.be">
+    <input type="hidden" name="REPLYFAULT" value="SteveGiebens/form/formulier.html">
+    <input type="hidden" name="REPLYOK" value="SteveGiebens/form/verzonden.html">
+    <p>
+        Dit is een voorbeeld van een eenvoudig invulformulier.</p>
+    <table border="0" width="374">
+        <tr>
+            <td width="137">
+                Naam:
+            </td>
+            <td width="230">
+                <input type="text" size="31" name="naam">
+            </td>
+        </tr>
+        <tr>
+            <td width="137">
+                Voornaam:
+            </td>
+            <td width="230">
+                <input type="text" size="31" name="voornaam">
+            </td>
+        </tr>
+        <tr>
+            <td width="137">
+                Postcode:
+            </td>
+            <td width="230">
+                <input type="text" size="31" name="postcode">
+            </td>
+        </tr>
+        <tr>
+            <td width="137">
+                Woonplaats:
+            </td>
+            <td width="230">
+                <input type="text" size="31" name="woonplaats">
+            </td>
+        </tr>
+        <tr>
+            <td width="137">
+                Telefoonnummer:
+            </td>
+            <td width="230">
+                <input type="text" size="31" name="telefoon">
+            </td>
+        </tr>
+        <tr>
+            <td width="137">
+                E-mailadres:
+            </td>
+            <td width="230">
+                <input type="text" size="31" name="MAILFROM">
+            </td>
+        </tr>
+        <tr>
+            <td width="137">
+                Onderwerp:
+            </td>
+            <td width="230">
+                <input type="text" size="31" maxlength="30" name="SUBJECT">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Omschrijving:<br>
+                <textarea name="omschrijving" rows="6" cols="43"></textarea>
+                <p align="right">
+                    <input type="submit" name="cmdVerzenden" value="Verzenden">&nbsp;
+                    <input type="reset" name="cmdWissen" value="Wissen">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
